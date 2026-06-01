@@ -1,0 +1,50 @@
+# Buisson Dark — Alacritty theme
+# https://github.com/yourusername/buisson-theme
+#
+# Usage: add to your alacritty.toml
+#   [import]
+#   paths = ["~/.config/alacritty/buisson-dark.toml"]
+
+[colors.primary]
+background = "#181916"
+foreground = "#ead6b4"
+
+[colors.cursor]
+text   = "#181916"
+cursor = "#6aaa44"
+
+[colors.vi_mode_cursor]
+text   = "#181916"
+cursor = "#c87838"
+
+[colors.selection]
+text       = "#ead6b4"
+background = "#31342a"
+
+[colors.normal]
+black   = "#181916"
+red     = "#d04550"
+green   = "#6aaa44"
+yellow  = "#c87838"
+blue    = "#4878ba"
+magenta = "#b070d0"
+cyan    = "#2ea882"
+white   = "#d2be9e"
+
+[colors.bright]
+black   = "#464940"
+red     = "#d04550"
+green   = "#6aaa44"
+yellow  = "#c87838"
+blue    = "#4878ba"
+magenta = "#b070d0"
+cyan    = "#2ea882"
+white   = "#ead6b4"
+
+[colors.hints.start]
+foreground = "#181916"
+background = "#c87838"
+
+[colors.hints.end]
+foreground = "#181916"
+background = "#6aaa44"

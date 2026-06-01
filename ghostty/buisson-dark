@@ -1,0 +1,27 @@
+# Buisson Dark — Ghostty theme
+# Place in: ~/.config/ghostty/themes/buisson-dark
+# Activate in ghostty.conf with: theme = buisson-dark
+
+background             = 181916
+foreground             = ead6b4
+selection-background   = 31342a
+selection-foreground   = ead6b4
+cursor-color           = 6aaa44
+cursor-text            = 181916
+
+palette = 0=#181916
+palette = 1=#d04550
+palette = 2=#6aaa44
+palette = 3=#c87838
+palette = 4=#4878ba
+palette = 5=#b070d0
+palette = 6=#2ea882
+palette = 7=#d2be9e
+palette = 8=#464940
+palette = 9=#d04550
+palette = 10=#6aaa44
+palette = 11=#c87838
+palette = 12=#4878ba
+palette = 13=#b070d0
+palette = 14=#2ea882
+palette = 15=#ead6b4

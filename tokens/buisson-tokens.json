@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "name": "Buisson",
+    "description": "An inky botanical color scheme — Evergarden soul, Flexoki accessibility",
+    "version": "1.0.0",
+    "author": "Buisson contributors"
+  },
+
+  "dark": {
+    "neutral": {
+      "bg0": { "value": "#181916", "usage": "Window chrome, title bars, deepest background" },
+      "bg1": { "value": "#1f2019", "usage": "Main editor / terminal background" },
+      "bg2": { "value": "#272a1f", "usage": "Sidebars, panels, inactive tabs" },
+      "bg3": { "value": "#31342a", "usage": "Selection highlight, active line" },
+      "bg4": { "value": "#464940", "usage": "Borders, separators, inactive UI elements" },
+      "fg3": { "value": "#6e6558", "usage": "Line numbers, decorative chrome (intentionally muted)" },
+      "fg2": { "value": "#9e9484", "usage": "Comments, secondary text, placeholders" },
+      "fg1": { "value": "#d2be9e", "usage": "Punctuation, operators context, secondary content" },
+      "fg0": { "value": "#ead6b4", "usage": "Primary text, identifiers, variable names" }
+    },
+    "accent": {
+      "hibiscus": { "value": "#d04550", "usage": "Keywords (def/if/for/return/not/or), booleans, exceptions" },
+      "sage":      { "value": "#6aaa44", "usage": "Function names, method names, function calls" },
+      "river-moss":{ "value": "#2ea882", "usage": "Types, classes, builtins, interfaces" },
+      "slate-sky": { "value": "#4878ba", "usage": "Numbers, numeric constants" },
+      "thistle":   { "value": "#b070d0", "usage": "Operators (= == → :), decorators, special syntax" },
+      "ochre":     { "value": "#c87838", "usage": "String literals, template literals, char literals" }
+    }
+  },
+
+  "light": {
+    "neutral": {
+      "bg0": { "value": "#f5f1e8", "usage": "Window chrome, lightest background (outside editor)" },
+      "bg1": { "value": "#ede8dc", "usage": "Main editor / terminal background" },
+      "bg2": { "value": "#e0d4bc", "usage": "Sidebars, panels, inactive tabs" },
+      "bg3": { "value": "#c8bea8", "usage": "Selection highlight, active line" },
+      "bg4": { "value": "#a89888", "usage": "Borders, separators, inactive UI elements" },
+      "fg3": { "value": "#7a7060", "usage": "Line numbers, decorative chrome" },
+      "fg2": { "value": "#5c5640", "usage": "Comments, secondary text, placeholders" },
+      "fg1": { "value": "#373520", "usage": "Punctuation, operators context, secondary content" },
+      "fg0": { "value": "#1a1208", "usage": "Primary text, identifiers, variable names" }
+    },
+    "accent": {
+      "hibiscus": { "value": "#c02040", "usage": "Keywords (def/if/for/return/not/or), booleans, exceptions" },
+      "sage":     { "value": "#387008", "usage": "Function names, method names, function calls" },
+      "river-moss":{"value": "#096868", "usage": "Types, classes, builtins, interfaces" },
+      "slate-sky":{ "value": "#1860a8", "usage": "Numbers, numeric constants" },
+      "thistle":  { "value": "#6028a8", "usage": "Operators (= == → :), decorators, special syntax" },
+      "ochre":    { "value": "#a04810", "usage": "String literals, template literals, char literals" }
+    }
+  },
+
+  "syntax-roles": {
+    "keyword":    { "dark": "#d04550", "light": "#c02040", "color": "hibiscus",  "examples": ["def","if","for","while","return","not","or","and","in","as","with","try","except","import","from","class"] },
+    "function":   { "dark": "#6aaa44", "light": "#387008", "color": "sage",      "examples": ["function_name()","method_call()","Class.method()"] },
+    "type":       { "dark": "#2ea882", "light": "#096868", "color": "river-moss","examples": ["str","int","list","dict","MyClass","Protocol","TypeVar"] },
+    "tag":        { "dark": "#2ea882", "light": "#096868", "color": "river-moss","examples": ["<div>","<span>","<html>","<Component>"] },
+    "attribute":  { "dark": "#2ea882", "light": "#096868", "color": "river-moss","examples": ["class=","href=","id=","data-x="] },
+    "string":     { "dark": "#c87838", "light": "#a04810", "color": "ochre",     "examples": ["\"string\"","'string'","f\"template {var}\"","\"\"\"docstring\"\"\""] },
+    "number":     { "dark": "#4878ba", "light": "#1860a8", "color": "slate-sky", "examples": ["42","3.14","0xFF","1_000_000"] },
+    "operator":   { "dark": "#b070d0", "light": "#6028a8", "color": "thistle",   "examples": ["=","==","!=","->","::","@decorator"] },
+    "comment":    { "dark": "#9e9484", "light": "#5c5640", "color": "fg2",       "examples": ["# comment","// comment","/* block */","---@param"] },
+    "identifier": { "dark": "#ead6b4", "light": "#1a1208", "color": "fg0",       "examples": ["variable","parameter","local_var"] },
+    "punctuation":{ "dark": "#d2be9e", "light": "#373520", "color": "fg1",       "examples": ["()","[]","{}",".",":",",",";"] },
+    "line-number":{ "dark": "#6e6558", "light": "#7a7060", "color": "fg3",       "examples": ["1","2","42","100"] }
+  },
+
+  "css-variables": {
+    "dark": "--bu-bg0:#181916;--bu-bg1:#1f2019;--bu-bg2:#272a1f;--bu-bg3:#31342a;--bu-bg4:#464940;--bu-fg3:#6e6558;--bu-fg2:#9e9484;--bu-fg1:#d2be9e;--bu-fg0:#ead6b4;--bu-hibiscus:#d04550;--bu-sage:#6aaa44;--bu-moss:#2ea882;--bu-slate:#4878ba;--bu-thistle:#b070d0;--bu-ochre:#c87838",
+    "light": "--bu-bg0:#f5f1e8;--bu-bg1:#ede8dc;--bu-bg2:#e0d4bc;--bu-bg3:#c8bea8;--bu-bg4:#a89888;--bu-fg3:#7a7060;--bu-fg2:#5c5640;--bu-fg1:#373520;--bu-fg0:#1a1208;--bu-hibiscus:#c02040;--bu-sage:#387008;--bu-moss:#096868;--bu-slate:#1860a8;--bu-thistle:#6028a8;--bu-ochre:#a04810"
+  }
+}

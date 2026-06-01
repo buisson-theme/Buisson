@@ -1,0 +1,27 @@
+# Buisson Light — Ghostty theme
+# Place in: ~/.config/ghostty/themes/buisson-light
+# Activate in ghostty.conf with: theme = buisson-light
+
+background             = f5f1e8
+foreground             = 1a1208
+selection-background   = c8bea8
+selection-foreground   = 1a1208
+cursor-color           = 387008
+cursor-text            = f5f1e8
+
+palette = 0=#373520
+palette = 1=#c02040
+palette = 2=#387008
+palette = 3=#a04810
+palette = 4=#1860a8
+palette = 5=#6028a8
+palette = 6=#096868
+palette = 7=#5c5640
+palette = 8=#7a7060
+palette = 9=#c02040
+palette = 10=#387008
+palette = 11=#a04810
+palette = 12=#1860a8
+palette = 13=#6028a8
+palette = 14=#096868
+palette = 15=#1a1208
