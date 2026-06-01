@@ -9,12 +9,10 @@
 
 ## Screenshots
 
-### Dark
-
 <table>
   <tr>
-    <td><img src="Buisson/dark.png" alt="Buisson Dark" /></td>
-    <td><img src="Buisson/dark-1.png" alt="Buisson Dark — alternate" /></td>
+    <td><img src="assets/dark.png" alt="Buisson Dark" /></td>
+    <td><img src="assets/light.png" alt="Buisson Light" /></td>
   </tr>
 </table>
 
