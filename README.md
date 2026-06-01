@@ -13,8 +13,8 @@
 
 <table>
   <tr>
-    <td><img src="Buisson/Theme dark.png" alt="Buisson Dark" /></td>
-    <td><img src="Buisson/Theme dark-1.png" alt="Buisson Dark — alternate" /></td>
+    <td><img src="Buisson/dark.png" alt="Buisson Dark" /></td>
+    <td><img src="Buisson/dark-1.png" alt="Buisson Dark — alternate" /></td>
   </tr>
 </table>
 
