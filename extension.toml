@@ -1,0 +1,11 @@
+[extension]
+id = "buisson"
+name = "Buisson"
+version = "0.1.0"
+schema_version = 1
+description = "An inky botanical color scheme — Evergarden soul, Flexoki accessibility. Warm paper backgrounds × botanical ink accents × WCAG-calibrated contrasts."
+authors = ["Adrius <me@adrius.blog>"]
+repository = "https://github.com/Adriusops/buisson"
+
+[themes]
+path = "themes"
