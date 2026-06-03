@@ -1,26 +1,41 @@
 {
-  "name": "buisson-theme",
-  "displayName": "Buisson",
-  "description": "An inky botanical color scheme — Evergarden soul, Flexoki accessibility",
-  "version": "1.0.0",
-  "publisher": "buisson",
-  "engines": { "vscode": "^1.60.0" },
-  "categories": ["Themes"],
-  "keywords": ["theme", "dark", "light", "botanical", "evergarden", "flexoki"],
-  "repository": { "type": "git", "url": "https://github.com/yourusername/buisson-theme" },
-  "icon": "icon.png",
-  "contributes": {
-    "themes": [
-      {
-        "label": "Buisson Dark",
-        "uiTheme": "vs-dark",
-        "path": "./themes/Buisson-Dark-color-theme.json"
-      },
-      {
-        "label": "Buisson Light",
-        "uiTheme": "vs",
-        "path": "./themes/Buisson-Light-color-theme.json"
-      }
-    ]
-  }
+    "name": "buisson-theme",
+    "displayName": "Buisson",
+    "description": "An inky botanical color scheme — Evergarden soul, Flexoki accessibility",
+    "version": "1.0.0",
+    "publisher": "adrius",
+    "engines": {
+        "vscode": "^1.60.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "keywords": [
+        "theme",
+        "dark",
+        "light",
+        "botanical",
+        "evergarden",
+        "flexoki"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Adriusops/buisson"
+    },
+    "icon": "icon.png",
+    "contributes": {
+        "themes": [
+            {
+                "label": "Buisson Dark",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Buisson-Dark-color-theme.json"
+            },
+            {
+                "label": "Buisson Light",
+                "uiTheme": "vs",
+                "path": "./themes/Buisson-Light-color-theme.json"
+            }
+        ]
+    },
+    "license": "MIT"
 }
