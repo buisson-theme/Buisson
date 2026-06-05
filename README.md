@@ -1,13 +1,10 @@
 # Buisson
 
-**An inky botanical color scheme** — Evergarden soul, Flexoki accessibility.
+Buisson is a botanical color scheme for editors and terminals.
 
-> Warm paper backgrounds × botanical ink accents × WCAG-calibrated contrasts.
-> Designed for long coding and writing sessions without eye fatigue.
+Buisson's palette is inspired by [Everforest](https://github.com/sainnhe/everforest) and [Flexoki](https://github.com/kepano/flexoki), designed for long coding and writing sessions with warm paper backgrounds, botanical ink accents, and WCAG-calibrated contrasts.
 
----
-
-## Screenshots
+## Previews
 
 <table>
   <tr>
@@ -16,117 +13,94 @@
   </tr>
 </table>
 
----
-
 ## Installation
 
-### Zed
+<details>
+<summary>Zed</summary>
 
-1. Copy `zed/buisson.json` to `~/.config/zed/themes/`
-2. Open Command Palette → **theme selector: toggle** → select **Buisson Dark** or **Buisson Light**
-
-Or symlink for live updates:
-```bash
-ln -sf /path/to/buisson-theme/zed/buisson.json ~/.config/zed/themes/buisson.json
+```sh
+cp zed/buisson.json ~/.config/zed/themes/
 ```
 
----
+Command palette → `theme selector: toggle` → **Buisson Dark** or **Buisson Light**.
 
-### VS Code
+</details>
 
-**Option A — Install from Marketplace** *(once published)*
-```
-ext install buisson.buisson-theme
-```
+<details>
+<summary>VS Code</summary>
 
-**Option B — Install from folder (local dev)**
-1. Copy the `vscode/` folder to `~/.vscode/extensions/buisson-theme`
-2. Reload VS Code
-3. Open Command Palette → **Preferences: Color Theme** → select **Buisson Dark** or **Buisson Light**
+Coming soon on the marketplace. In the meantime, install manually:
 
-**Option C — Install .vsix**
-```bash
-cd vscode/
-npm install -g @vscode/vsce
-vsce package
-code --install-extension buisson-theme-1.0.0.vsix
+```sh
+cp -r vscode/ ~/.vscode/extensions/buisson-theme
 ```
 
----
+Reload VS Code, then select **Buisson Dark** or **Buisson Light** from the command palette.
 
-### Kitty
+</details>
 
-```bash
+<details>
+<summary>Kitty</summary>
+
+```sh
 cp kitty/buisson-dark.conf ~/.config/kitty/
 echo "include ~/.config/kitty/buisson-dark.conf" >> ~/.config/kitty/kitty.conf
 ```
 
-Switch between variants by changing the include line:
+Switch variants by changing the `include` line to `buisson-light.conf`.
+
+</details>
+
+<details>
+<summary>Ghostty</summary>
+
+```sh
+cp "ghostty/Buisson Dark" ~/.config/ghostty/themes/
+cp "ghostty/Buisson Light" ~/.config/ghostty/themes/
 ```
-include ~/.config/kitty/buisson-dark.conf   # dark
-include ~/.config/kitty/buisson-light.conf  # light
-```
 
----
+In `ghostty.conf`: `theme = dark:Buisson Dark,light:Buisson Light`
 
-### Alacritty
+</details>
 
-```bash
+<details>
+<summary>Alacritty</summary>
+
+```sh
 cp alacritty/buisson-dark.toml ~/.config/alacritty/
-# Add to alacritty.toml: import = ["~/.config/alacritty/buisson-dark.toml"]
 ```
 
----
+In `alacritty.toml`: `import = ["~/.config/alacritty/buisson-dark.toml"]`
+
+</details>
 
 ## Palette
 
-| Token | Dark | Light | Role |
-|-------|------|-------|------|
-| hibiscus | `#d04550` | `#c02040` | Keywords, booleans, exceptions |
-| sage | `#6aaa44` | `#387008` | Functions, methods |
-| river-moss | `#2ea882` | `#096868` | Types, classes |
-| slate-sky | `#4878ba` | `#1860a8` | Numbers, constants |
-| thistle | `#b070d0` | `#6028a8` | Operators, decorators |
-| ochre | `#c87838` | `#a04810` | Strings, templates |
+|  | dark | light | role |
+|--|------|-------|------|
+| hibiscus | `#d04550` | `#c02040` | keywords · booleans · exceptions |
+| sage | `#6aaa44` | `#387008` | functions · methods |
+| river-moss | `#2ea882` | `#096868` | types · classes |
+| slate-sky | `#4878ba` | `#1860a8` | numbers · constants |
+| thistle | `#b070d0` | `#6028a8` | operators · decorators |
+| ochre | `#c87838` | `#a04810` | strings · templates |
 
----
+Design tokens available in `tokens/buisson-tokens.json` — compatible with [Tokens Studio](https://tokens.studio/) and [Style Dictionary](https://amzn.github.io/style-dictionary/).
 
 ## Ports
 
-| Platform | Status |
+| platform | status |
 |----------|--------|
-| Zed | ✅ Available |
-| VS Code | ✅ Available |
-| Kitty | ✅ Available |
-| Alacritty | ✅ Available |
-| Ghostty | ✅ Available |
-| Neovim | 🚧 Planned |
-| iTerm2 | 🚧 Planned |
+| Zed | ✅ |
+| VS Code | ✅ |
+| Kitty | ✅ |
+| Ghostty | ✅ |
+| Alacritty | ✅ |
+| Neovim | 🚧 planned |
+| Obsidian | ✅ |
+| iTerm2 | 🚧 planned |
 
----
-
-## Design tokens
-
-The complete palette is available in `tokens/buisson-tokens.json` — compatible with Tokens Studio (Figma plugin) and Style Dictionary.
-
----
-
-## Accessibility
-
-| | Dark | Light |
-|--|------|-------|
-| Main text | 11.55:1 AAA | 15.15:1 AAA |
-| Comments | 5.49:1 AA | 6.01:1 AA |
-| Keywords (hibiscus) | 3.64:1 AA Large* | 4.88:1 AA |
-| Functions (sage) | 5.82:1 AA | 4.92:1 AA |
-| Types (river-moss) | 5.50:1 AA | 5.38:1 AA |
-| Strings (ochre) | 4.85:1 AA | 5.01:1 AA |
-| Operators (thistle) | 4.75:1 AA | 7.26:1 AAA |
-| Numbers (slate) | 3.65:1 AA Large* | 5.24:1 AA |
-
-\* Same profile as Flexoki (red 3.97, blue 4.37). Syntax decoration elements, not body text.
-
----
+new ports are always welcome — if you've made one, feel free to open a PR.
 
 ## License
 
