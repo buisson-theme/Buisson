@@ -74,6 +74,27 @@ In `alacritty.toml`: `import = ["~/.config/alacritty/buisson-dark.toml"]`
 
 </details>
 
+<details>
+<summary>Neovim</summary>
+
+Requires Neovim 0.9+ with [lazy.nvim](https://github.com/folke/lazy.nvim).
+
+```lua
+{
+  dir = "/path/to/buisson-theme/nvim",  -- or use the GitHub URL once published
+  name = "buisson",
+  lazy = false,
+  priority = 1000,
+  config = function()
+    require("buisson").load()
+  end,
+}
+```
+
+Switch variants with `:set background=dark` / `:set background=light`.
+
+</details>
+
 ## Palette
 
 |  | dark | light | role |
@@ -96,7 +117,7 @@ Design tokens available in `tokens/buisson-tokens.json` — compatible with [Tok
 | Kitty | ✅ |
 | Ghostty | ✅ |
 | Alacritty | ✅ |
-| Neovim | 🚧 planned |
+| Neovim | ✅ |
 | Obsidian | ✅ |
 | iTerm2 | 🚧 planned |
 
