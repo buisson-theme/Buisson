@@ -106,7 +106,7 @@ Switch variants with `:set background=dark` / `:set background=light`.
 | thistle | `#b070d0` | `#6028a8` | operators · decorators |
 | ochre | `#c87838` | `#a04810` | strings · templates |
 
-Design tokens available in `tokens/buisson-tokens.json` — compatible with [Tokens Studio](https://tokens.studio/) and [Style Dictionary](https://amzn.github.io/style-dictionary/).
+Design tokens available in `tokens/buisson-tokens.json` compatible with [Tokens Studio](https://tokens.studio/) and [Style Dictionary](https://amzn.github.io/style-dictionary/).
 
 ## Ports
 
@@ -121,7 +121,7 @@ Design tokens available in `tokens/buisson-tokens.json` — compatible with [Tok
 | Obsidian | ✅ |
 | iTerm2 | 🚧 planned |
 
-new ports are always welcome — if you've made one, feel free to open a PR.
+new ports are always welcome, if you've made one, feel free to open a PR.
 
 ## License
 
