@@ -130,6 +130,13 @@ Switch variants with `:set background=dark` / `:set background=light`.
 | thistle | `#b070d0` | `#6028a8` | operators · decorators |
 | ochre | `#c87838` | `#a04810` | strings · templates |
 
+<table>
+  <tr>
+    <td><img src="assets/dark.png" alt="Buisson Dark palette" /></td>
+    <td><img src="assets/light.png" alt="Buisson Light palette" /></td>
+  </tr>
+</table>
+
 Design tokens available in `tokens/buisson-tokens.json` compatible with [Tokens Studio](https://tokens.studio/) and [Style Dictionary](https://amzn.github.io/style-dictionary/).
 
 ## Ports
