@@ -8,10 +8,34 @@ Buisson's palette is inspired by [Everforest](https://github.com/sainnhe/everfor
 
 <table>
   <tr>
-    <td><img src="assets/dark.png" alt="Buisson Dark" /></td>
-    <td><img src="assets/light.png" alt="Buisson Light" /></td>
+    <td><img src="assets/zed-dark.png" alt="Buisson Dark — Zed" /></td>
+    <td><img src="assets/zed-light.png" alt="Buisson Light — Zed" /></td>
   </tr>
 </table>
+
+<details>
+<summary>Neovim</summary>
+
+<table>
+  <tr>
+    <td><img src="assets/nvim-dark.png" alt="Buisson Dark — Neovim" /></td>
+    <td><img src="assets/nvim-light.png" alt="Buisson Light — Neovim" /></td>
+  </tr>
+</table>
+
+</details>
+
+<details>
+<summary>Ghostty</summary>
+
+<table>
+  <tr>
+    <td><img src="assets/ghostty-dark.png" alt="Buisson Dark — Ghostty" /></td>
+    <td><img src="assets/ghostty-light.png" alt="Buisson Light — Ghostty" /></td>
+  </tr>
+</table>
+
+</details>
 
 ## Installation
 
