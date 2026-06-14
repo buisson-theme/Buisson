@@ -25,6 +25,9 @@
         "editor.selection.background": "#46494080",
         "editor.inactive_selection.background": "#31342a50",
         "editor.active_line.background": "#31342a40",
+        "players": [
+          { "background": "#ead6b4", "cursor": "#ead6b4", "selection": "#46494080" }
+        ],
         "editor.cursor": "#ead6b4",
         "editor.invisible": "#46494050",
         "editor.document_highlight.read_background": "#31342a50",
@@ -90,6 +93,7 @@
         "terminal.foreground": "#ead6b4",
         "terminal.bright_foreground": "#ead6b4",
         "terminal.dim_foreground": "#9e9484",
+        "terminal.cursor": "#ead6b4",
         "terminal.ansi.black": "#181916",
         "terminal.ansi.red": "#d04550",
         "terminal.ansi.green": "#6aaa44",
@@ -178,6 +182,9 @@
         "editor.active_line.background": "#e0d4bc40",
         "editor.document_highlight.read_background": "#c8bea840",
         "editor.document_highlight.write_background": "#c8bea860",
+        "players": [
+          { "background": "#1a1208", "cursor": "#1a1208", "selection": "#c8bea880" }
+        ],
         "editor.cursor": "#1a1208",
         "editor.invisible": "#c8bea860",
         "text": "#1a1208",
@@ -221,6 +228,7 @@
         "hint.background": "#09686815",
         "terminal.background": "#f5f1e8",
         "terminal.foreground": "#1a1208",
+        "terminal.cursor": "#1a1208",
         "terminal.ansi.black": "#373520",
         "terminal.ansi.red": "#c02040",
         "terminal.ansi.green": "#387008",
