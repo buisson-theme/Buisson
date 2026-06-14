@@ -11,11 +11,11 @@ foreground = "#ead6b4"
 
 [colors.cursor]
 text   = "#181916"
-cursor = "#6aaa44"
+cursor = "#ead6b4"
 
 [colors.vi_mode_cursor]
 text   = "#181916"
-cursor = "#c87838"
+cursor = "#ead6b4"
 
 [colors.selection]
 text       = "#ead6b4"
