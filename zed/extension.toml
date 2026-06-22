@@ -1,0 +1,10 @@
+id = "buisson-theme"
+name = "Buisson"
+description = "An inky botanical color scheme — Evergarden soul, Flexoki accessibility"
+version = "0.1.0"
+schema_version = 1
+authors = ["Adrius <me@adrius.blog>"]
+repository = "https://github.com/Adriusops/buisson-zed"
+
+[themes]
+path = "themes"

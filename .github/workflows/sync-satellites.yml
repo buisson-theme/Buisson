@@ -1,0 +1,61 @@
+name: Sync satellites
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'zed/**'
+      - 'obsidian/**'
+      - 'vscode/**'
+
+jobs:
+  sync-zed:
+    if: contains(github.event.head_commit.modified, 'zed/') || contains(github.event.head_commit.added, 'zed/')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Push to buisson-zed
+        run: |
+          git config --global user.email "github-actions@github.com"
+          git config --global user.name "github-actions"
+          git clone https://x-access-token:${{ secrets.SYNC_TOKEN }}@github.com/Adriusops/buisson-zed.git /tmp/buisson-zed
+          cp zed/extension.toml /tmp/buisson-zed/
+          mkdir -p /tmp/buisson-zed/themes
+          cp zed/buisson.json /tmp/buisson-zed/themes/
+          cp LICENSE /tmp/buisson-zed/
+          cd /tmp/buisson-zed
+          git add .
+          git diff --cached --quiet || (git commit -m "sync: update from buisson-theme@${{ github.sha }}" && git push)
+
+  sync-obsidian:
+    if: contains(github.event.head_commit.modified, 'obsidian/') || contains(github.event.head_commit.added, 'obsidian/')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Push to buisson-obsidian
+        run: |
+          git config --global user.email "github-actions@github.com"
+          git config --global user.name "github-actions"
+          git clone https://x-access-token:${{ secrets.SYNC_TOKEN }}@github.com/Adriusops/buisson-obsidian.git /tmp/buisson-obsidian
+          cp obsidian/buisson.css /tmp/buisson-obsidian/theme.css
+          cp LICENSE /tmp/buisson-obsidian/
+          cd /tmp/buisson-obsidian
+          git add .
+          git diff --cached --quiet || (git commit -m "sync: update from buisson-theme@${{ github.sha }}" && git push)
+
+  sync-vscode:
+    if: contains(github.event.head_commit.modified, 'vscode/') || contains(github.event.head_commit.added, 'vscode/')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Push to buisson-vscode
+        run: |
+          git config --global user.email "github-actions@github.com"
+          git config --global user.name "github-actions"
+          git clone https://x-access-token:${{ secrets.SYNC_TOKEN }}@github.com/Adriusops/buisson-vscode.git /tmp/buisson-vscode
+          cp vscode/package.json /tmp/buisson-vscode/
+          cp -r vscode/themes /tmp/buisson-vscode/
+          cp LICENSE /tmp/buisson-vscode/
+          cd /tmp/buisson-vscode
+          git add .
+          git diff --cached --quiet || (git commit -m "sync: update from buisson-theme@${{ github.sha }}" && git push)
