@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="logo-bush(1).png" width="120" alt="Buisson" />
+  <img src="logo-buisson.png" width="120" alt="Buisson" />
 </p>
 
 <h3 align="center">Buisson</h3>
