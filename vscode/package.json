@@ -2,7 +2,7 @@
     "name": "buisson-theme",
     "displayName": "Buisson",
     "description": "An inky botanical color scheme — Evergarden soul, Flexoki accessibility",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "publisher": "adrius",
     "engines": {
         "vscode": "^1.60.0"
@@ -20,7 +20,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/Adriusops/buisson"
+        "url": "https://github.com/Adriusops/buisson-theme"
     },
     "icon": "icon.png",
     "contributes": {
