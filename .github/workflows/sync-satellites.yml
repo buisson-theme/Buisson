@@ -10,7 +10,7 @@ on:
 
 jobs:
   sync-zed:
-    if: contains(github.event.head_commit.modified, 'zed/') || contains(github.event.head_commit.added, 'zed/')
+    if: contains(toJson(github.event.head_commit.modified), 'zed/') || contains(toJson(github.event.head_commit.added), 'zed/')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -28,7 +28,7 @@ jobs:
           git diff --cached --quiet || (git commit -m "sync: update from buisson-theme@${{ github.sha }}" && git push)
 
   sync-obsidian:
-    if: contains(github.event.head_commit.modified, 'obsidian/') || contains(github.event.head_commit.added, 'obsidian/')
+    if: contains(toJson(github.event.head_commit.modified), 'obsidian/') || contains(toJson(github.event.head_commit.added), 'obsidian/')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -44,7 +44,7 @@ jobs:
           git diff --cached --quiet || (git commit -m "sync: update from buisson-theme@${{ github.sha }}" && git push)
 
   sync-vscode:
-    if: contains(github.event.head_commit.modified, 'vscode/') || contains(github.event.head_commit.added, 'vscode/')
+    if: contains(toJson(github.event.head_commit.modified), 'vscode/') || contains(toJson(github.event.head_commit.added), 'vscode/')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
