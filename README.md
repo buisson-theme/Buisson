@@ -1,17 +1,39 @@
-# Buisson
+<p align="center">
+  <img src="logo-bush(1).png" width="120" alt="Buisson" />
+</p>
 
-Buisson is a botanical color scheme for editors and terminals.
+<h3 align="center">Buisson</h3>
 
-Buisson's palette is inspired by [Everforest](https://github.com/sainnhe/everforest) and [Flexoki](https://github.com/kepano/flexoki), designed for long coding and writing sessions with warm paper backgrounds, botanical ink accents, and WCAG-calibrated contrasts.
+<p align="center"><em>From the French — a thicket, a tangle of wild growth at the edge of a path.</em></p>
+
+<p align="center">
+  <a href="#previews">Previews</a> ·
+  <a href="#installation">Installation</a> ·
+  <a href="#palette">Palette</a> ·
+  <a href="#ports">Ports</a>
+</p>
+
+<p align="center">
+  An inky botanical color scheme for editors and terminals.<br/>
+  Warm paper backgrounds, botanical ink accents, WCAG-calibrated contrasts.
+</p>
+
+<p align="center">
+  <img src="assets/zed-dark.png" width="49%" alt="Buisson Dark" />
+  <img src="assets/zed-light.png" width="49%" alt="Buisson Light" />
+</p>
+
+---
+
+## Design
+
+Buisson draws from [Everforest](https://github.com/sainnhe/everforest)'s warmth and [Flexoki](https://github.com/kepano/flexoki)'s accessibility discipline.
+
+- **Botanical** — six accent colors named after plants and landscapes, each with a semantic role
+- **Calibrated** — primary text AAA (11.55:1 dark / 15.15:1 light), all accents WCAG AA or above
+- **Warm** — paper backgrounds with a depth hierarchy; no cold grays
 
 ## Previews
-
-<table>
-  <tr>
-    <td><img src="assets/zed-dark.png" alt="Buisson Dark — Zed" /></td>
-    <td><img src="assets/zed-light.png" alt="Buisson Light — Zed" /></td>
-  </tr>
-</table>
 
 <details>
 <summary>Neovim</summary>
@@ -37,10 +59,25 @@ Buisson's palette is inspired by [Everforest](https://github.com/sainnhe/everfor
 
 </details>
 
+<details>
+<summary>Obsidian</summary>
+
+<table>
+  <tr>
+    <td><img src="assets/obsidian-dark.png" alt="Buisson Dark — Obsidian" /></td>
+  </tr>
+</table>
+
+</details>
+
 ## Installation
 
 <details>
 <summary>Zed</summary>
+
+Search for **Buisson** in Zed's extension marketplace: `zed: extensions` → search "Buisson".
+
+Or manually:
 
 ```sh
 cp zed/buisson.json ~/.config/zed/themes/
@@ -53,13 +90,24 @@ Command palette → `theme selector: toggle` → **Buisson Dark** or **Buisson L
 <details>
 <summary>VS Code</summary>
 
-Coming soon on the marketplace. In the meantime, install manually:
+Install from the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=adrius.buisson-theme).
+
+Or manually:
 
 ```sh
 cp -r vscode/ ~/.vscode/extensions/buisson-theme
 ```
 
 Reload VS Code, then select **Buisson Dark** or **Buisson Light** from the command palette.
+
+</details>
+
+<details>
+<summary>Obsidian</summary>
+
+Open Obsidian → **Settings → Appearance → Themes → Manage** → search "Buisson" → Install and use.
+
+To switch variants: **Settings → Appearance → Base color scheme**.
 
 </details>
 
@@ -105,7 +153,7 @@ Requires Neovim 0.9+ with [lazy.nvim](https://github.com/folke/lazy.nvim).
 
 ```lua
 {
-  dir = "/path/to/buisson-theme/nvim",  -- or use the GitHub URL once published
+  dir = "/path/to/buisson-theme/nvim",
   name = "buisson",
   lazy = false,
   priority = 1000,
@@ -121,14 +169,14 @@ Switch variants with `:set background=dark` / `:set background=light`.
 
 ## Palette
 
-|  | dark | light | role |
-|--|------|-------|------|
-| hibiscus | `#d04550` | `#c02040` | keywords · booleans · exceptions |
-| sage | `#6aaa44` | `#387008` | functions · methods |
-| river-moss | `#2ea882` | `#096868` | types · classes |
-| slate-sky | `#4878ba` | `#1860a8` | numbers · constants |
-| thistle | `#b070d0` | `#6028a8` | operators · decorators |
-| ochre | `#c87838` | `#a04810` | strings · templates |
+| Name | Dark | Light | Role |
+|------|------|-------|------|
+| Hibiscus | `#d04550` | `#c02040` | keywords · booleans · exceptions |
+| Sage | `#6aaa44` | `#387008` | functions · methods |
+| River Moss | `#2ea882` | `#096868` | types · classes |
+| Slate Sky | `#4878ba` | `#1860a8` | numbers · constants |
+| Thistle | `#b070d0` | `#6028a8` | operators · decorators |
+| Ochre | `#c87838` | `#a04810` | strings · templates |
 
 <table>
   <tr>
@@ -137,22 +185,22 @@ Switch variants with `:set background=dark` / `:set background=light`.
   </tr>
 </table>
 
-Design tokens available in `tokens/buisson-tokens.json` compatible with [Tokens Studio](https://tokens.studio/) and [Style Dictionary](https://amzn.github.io/style-dictionary/).
+Design tokens available in `tokens/buisson-tokens.json`, compatible with [Tokens Studio](https://tokens.studio/) and [Style Dictionary](https://amzn.github.io/style-dictionary/).
 
 ## Ports
 
-| platform | status |
+| Platform | Status |
 |----------|--------|
-| Zed | ✅ |
-| VS Code | ✅ |
+| Zed | ✅ marketplace |
+| VS Code | ✅ marketplace |
+| Obsidian | ✅ community themes |
 | Kitty | ✅ |
 | Ghostty | ✅ |
 | Alacritty | ✅ |
 | Neovim | ✅ |
-| Obsidian | ✅ |
 | iTerm2 | 🚧 planned |
 
-new ports are always welcome, if you've made one, feel free to open a PR.
+New ports are always welcome — open a PR.
 
 ## License
 
