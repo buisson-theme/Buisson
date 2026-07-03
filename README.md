@@ -77,13 +77,7 @@ Buisson draws from [Everforest](https://github.com/sainnhe/everforest)'s warmth 
 
 Search for **Buisson** in Zed's extension marketplace: `zed: extensions` → search "Buisson".
 
-Or manually:
-
-```sh
-cp zed/buisson.json ~/.config/zed/themes/
-```
-
-Command palette → `theme selector: toggle` → **Buisson Dark** or **Buisson Light**.
+See [buisson-theme/buisson-zed](https://github.com/buisson-theme/buisson-zed) for details.
 
 </details>
 
@@ -92,13 +86,7 @@ Command palette → `theme selector: toggle` → **Buisson Dark** or **Buisson L
 
 Install from the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=adrius.buisson-theme).
 
-Or manually:
-
-```sh
-cp -r vscode/ ~/.vscode/extensions/buisson-theme
-```
-
-Reload VS Code, then select **Buisson Dark** or **Buisson Light** from the command palette.
+See [buisson-theme/buisson-vscode](https://github.com/buisson-theme/buisson-vscode) for details.
 
 </details>
 
@@ -107,7 +95,7 @@ Reload VS Code, then select **Buisson Dark** or **Buisson Light** from the comma
 
 Open Obsidian → **Settings → Appearance → Themes → Manage** → search "Buisson" → Install and use.
 
-To switch variants: **Settings → Appearance → Base color scheme**.
+See [buisson-theme/buisson-obsidian](https://github.com/buisson-theme/buisson-obsidian) for details.
 
 </details>
 
@@ -149,21 +137,7 @@ In `alacritty.toml`: `import = ["~/.config/alacritty/buisson-dark.toml"]`
 <details>
 <summary>Neovim</summary>
 
-Requires Neovim 0.9+ with [lazy.nvim](https://github.com/folke/lazy.nvim).
-
-```lua
-{
-  dir = "/path/to/buisson-theme/nvim",
-  name = "buisson",
-  lazy = false,
-  priority = 1000,
-  config = function()
-    require("buisson").load()
-  end,
-}
-```
-
-Switch variants with `:set background=dark` / `:set background=light`.
+See [buisson-theme/buisson.nvim](https://github.com/buisson-theme/buisson.nvim) for installation instructions.
 
 </details>
 
