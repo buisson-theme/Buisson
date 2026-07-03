@@ -54,6 +54,8 @@ jobs:
           git config --global user.name "github-actions"
           git clone https://x-access-token:${{ secrets.SYNC_TOKEN }}@github.com/Adriusops/buisson-vscode.git /tmp/buisson-vscode
           cp vscode/package.json /tmp/buisson-vscode/
+          cp vscode/README.md /tmp/buisson-vscode/
+          cp vscode/icon.png /tmp/buisson-vscode/
           cp -r vscode/themes /tmp/buisson-vscode/
           cp LICENSE /tmp/buisson-vscode/
           cd /tmp/buisson-vscode
