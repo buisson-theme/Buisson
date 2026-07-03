@@ -4,7 +4,7 @@
 
 <h3 align="center">Buisson</h3>
 
-<p align="center"><em>From the French — a thicket, a tangle of wild growth at the edge of a path.</em></p>
+<p align="center"><em>Damp moss, warm parchment, and the kind of light that makes you want to stay.</em></p>
 
 <p align="center">
   <a href="#previews">Previews</a> ·
@@ -29,9 +29,9 @@
 
 Buisson draws from [Everforest](https://github.com/sainnhe/everforest)'s warmth and [Flexoki](https://github.com/kepano/flexoki)'s accessibility discipline.
 
-- **Botanical** — six accent colors named after plants and landscapes, each with a semantic role
-- **Calibrated** — primary text AAA (11.55:1 dark / 15.15:1 light), all accents WCAG AA or above
-- **Warm** — paper backgrounds with a depth hierarchy; no cold grays
+- **Botanical**: six accent colors named after plants and landscapes, each with a semantic role
+- **Calibrated**: primary text AAA (11.55:1 dark / 15.15:1 light), all accents WCAG AA or above
+- **Warm**: paper backgrounds with a depth hierarchy; no cold grays
 
 ## Previews
 
